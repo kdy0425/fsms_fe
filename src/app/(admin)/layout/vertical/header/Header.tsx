@@ -19,7 +19,13 @@ import Favorites from './Favorites'
 import LogoutButton from '@/app/components/fsms/fsm/user/LoginButton'
 import UserAuthContext from '@/app/components/context/UserAuthContext'
 
-const Header = () => {
+
+/* 로고빼고 다 가림 */
+type HeaderProps = {
+  hideLogin?: boolean;
+};
+
+const Header = ({ hideLogin = false }: HeaderProps) => {
   // drawer
   const customizer = useSelector((state: AppState) => state.customizer)
   const dispatch = useDispatch()
@@ -62,9 +68,9 @@ const Header = () => {
     <AppBarStyled position="relative" color="default" className="header-wrapper">
       <ToolbarStyled className="header-inner">
         <Logo />
-
         <Box flexGrow={1} />
-
+        {/* 회원가입에서 로고빼고 다 가림 */}
+        {!hideLogin && (
         <Stack spacing={1} direction="row" alignItems="center">
           {/* 로그인/프로필 분기처리 */}
           {isLoggedIn ? (
@@ -93,6 +99,7 @@ const Header = () => {
             </Stack>
           )}
         </Stack>
+        )}
       </ToolbarStyled>
     </AppBarStyled>
   )

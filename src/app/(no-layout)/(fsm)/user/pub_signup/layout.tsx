@@ -13,7 +13,6 @@ import { useEffect } from "react";
 // 포털시스템 스타일
 import "@/app/assets/css/layoutFsm.css";
 import { useRouter } from "next/router";
-import Sidebar from "./layout/vertical/sidebar/Sidebar";
 import { usePathname } from "next/navigation";
 
 const BodyContainerWrapper = styled("div")(() => ({
@@ -56,37 +55,10 @@ export default function RootLayout({ children }: Props) {
         {/* ------------------------------------------- */}
         {/* Header */}
         {/* ------------------------------------------- */}
-        <Header />
-
-        {/* ------------------------------------------- */}
-        {/* Navigation */}
-        {/* ------------------------------------------- */}
-        <Navigation />
-
-          {/* 인덱스 페이지가 아닌 경우에만 Navigation을 표시 */}
-          <BodyContent className="body-content">
-          {/* ------------------------------------------- */}
-          {/* Sidebar */}
-          {/* ------------------------------------------- */}
-          {!isIndexPage && <Sidebar />}
-          {/* PageContent */}
-          <Container className="page-content-wrapper">
-            {/* ------------------------------------------- */}
-            {/* PageContent */}
-            {/* ------------------------------------------- */}
-
-            <Box className="page-content-inner">
-              {/* <Outlet /> */}
-              {children}
-              {/* <Index /> */}
-            </Box>
-
-            {/* ------------------------------------------- */}
-            {/* End Page */}
-            {/* ------------------------------------------- */}
-          </Container>
+        <Header hideLogin={true} />
+        <BodyContent className="join-content">
+            {children}
         </BodyContent>
-        <Footer />
       </BodyContainerInner>
     </BodyContainerWrapper>
   );

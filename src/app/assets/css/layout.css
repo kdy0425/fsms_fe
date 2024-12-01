@@ -16,7 +16,7 @@ Last update : 2024-07-26
 *::placeholder,
 *::-webkit-input-placeholder,
 *:-ms-input-placeholder {
-    color: #000000 !important;
+    color: #717171 !important;
     opacity: 1 !important;
 }
 body {
@@ -999,7 +999,7 @@ header {
 }
 input::placeholder,
 .MuiInputBase-input::placeholder {
-    color: #000000 !important;
+    color: #717171 !important;
     opacity: 1 !important;
 }
 .MuiInputBase-input {
@@ -1052,7 +1052,7 @@ input::placeholder,
 
 
 .MuiDialogContent-root {
-    padding: 16px 24px;
+    padding: 40px;
     border-top: 1px solid #c3cbd3;
     border-bottom: 1px solid #c3cbd3;
 }
