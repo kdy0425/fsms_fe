@@ -863,7 +863,7 @@ textarea.input_type1{width:100%;resize: none;height: 100px;padding:12px;}
 
 .form_table_type1 input,
 .form_table_type1 select,
-.form_table_type1 textarea{border:1px solid #ADB4C1; color:#555 !important;padding-left:12px !important;}
+.form_table_type1 textarea{border:1px solid #ADB4C1; color:#555 !important;padding-left:12px !important;font-size:14px;}
 .form_table_type1 textarea{width: 100%;height: 132px;resize: none;border-radius: 7px;padding:12px !important;}
 .form_table_type1 .MuiInputBase-input{border:1px solid #ADB4C1; color:#555 !important;padding-left:12px !important;}
 .form_table_type1 .MuiFormControl-root{min-width:0;}
