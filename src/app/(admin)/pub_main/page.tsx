@@ -1116,12 +1116,17 @@ export default function Main() {
                         <p className="oilps-info-con-title info-value-small">
                           단가 (㎏)
                         </p>
-                        <p className="oilps-info-con-value textB">
+                        <div className="oilps-info-sub-value">
+                          <div className="color-blue">
                           {fuelSubsidyRates !== undefined
                             ? fuelSubsidyRates.koiH
                             : '데이터 없음'}
-                          <span className="info-value-small">원</span>
-                        </p>
+                          <span className="info-value-small">원</span></div>
+                        </div>
+                        <div className="oilps-info-sub-value">
+                          <div className="color-orange">3,700<span className="info-value-small">원</span></div>
+                          <div className="color-gray">3,600<span className="info-value-small">원</span></div>
+                        </div>
                       </div>
                     </div>
                     <div className="oilps-map-info-box">
@@ -1154,7 +1159,7 @@ export default function Main() {
                       </div>
                     </div>
                   </div>
-                  <div className="box-con-col">
+                  <div className="box-con-col box-auto">
                     <div className="contents-explanation">
                       <div className="contents-explanation-inner">
                         <div className="contents-explanation-text">
@@ -1168,6 +1173,13 @@ export default function Main() {
                         <div className="contents-explanation-text">
                           CNG의 경우 전세버스인 경우 괄호 안의 단가를 적용
                           받습니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="contents-explanation">
+                      <div className="contents-explanation-inner">
+                        <div className="contents-explanation-text">
+                          수소의 경우 <strong className='color-blue'>화물</strong> / <strong className='color-orange'>택시</strong> / <strong className='color-gray'>버스</strong>의 단가를 적용 받습니다.
                         </div>
                       </div>
                     </div>

@@ -69,7 +69,8 @@ const Navigation = () => {
         {/* 통합검색 끝 */}
 
         <div className="navbar-btn-wrapper">
-          <a href="/site-map" className="header-right-menu header-menu-all">전체메뉴 열기</a>
+          {/* <a href="/site-map" className="header-right-menu header-menu-all">전체메뉴 열기</a> */}
+          <a href="javascript:;" className="header-right-menu header-menu-search">차량검색</a>
         </div>
 
       </Container>

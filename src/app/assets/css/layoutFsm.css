@@ -369,12 +369,22 @@ Last update : 2024-09-10
     text-align: right;
     font-size: 30px;
 }
+.oilps-info-con-value-sm{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
 .info-value-small {
     font-size: 16px;
 }
 .oilps-info-con-value.info-value-small {
     text-align: center;
 }
+
+.oilps-info-sub-value{display: flex;justify-content: center;align-items: center;margin-top:2px;}
+.oilps-info-sub-value > div{font-weight:700;font-size:18px;}
+.oilps-info-sub-value > div + div{}
+.oilps-info-sub-value > div + div:before{content:"/";color:#232647;font-size:15px;font-weight: bold;margin:0 6px;font-weight: 600;}
 
 .contents-box-con{position: relative;}
 .oilps-info-labels{display: flex;background-color: #F8FCFF;border:1px solid #D7E2EC;border-radius:5px;padding:10px;align-items: center;position: absolute;right:0;top:-20px;}
@@ -410,10 +420,12 @@ Last update : 2024-09-10
     width: 100%;
     padding: 4px 0px;
 }
-
+.box-auto{flex:1 1 auto;}
 .contents-box-con .contents-explanation {
     background-position: 18px 13px;
+    margin:0;
 }
+.contents-box-con .contents-explanation + .contents-explanation{margin-top:5px;}
 .contents-box-con .contents-explanation .contents-explanation-text {
     padding-left: 30px;
 }
