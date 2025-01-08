@@ -729,7 +729,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 0 40px;
     font-size: 30px;
 }
 .custom-modal-box-ex {
@@ -737,7 +737,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #000;
+    color: #555;
 }
 .custom-modal-box-contents {
     padding: 10px 40px;
@@ -2786,3 +2786,15 @@ ul.marker-strong > li::marker {
 
 /* mui 파일 업로드 섹션크기 */
 .mui-wnnb35 {min-height: 0px;}
+
+
+.btn_favorite{position: absolute;right:16px;top:50%;transform: translate(0,-50%);color:#2A3547;font-size:14px;height:20px;font-weight:500;border:0;padding-left:26px;background-color: transparent;background-repeat: no-repeat;background-position: left center;background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.567 2.817a1 1 0 0 1 1.793 0l1.796 3.636a1 1 0 0 0 .752.547l4.016.587a1 1 0 0 1 .553 1.706l-2.905 2.829a1 1 0 0 0-.287.885l.685 3.996a1 1 0 0 1-1.451 1.054l-3.59-1.888a1 1 0 0 0-.93 0l-3.59 1.888a1 1 0 0 1-1.451-1.054l.685-3.996a1 1 0 0 0-.288-.885L2.451 9.293a1 1 0 0 1 .553-1.706L7.02 7a1 1 0 0 0 .752-.547l1.795-3.636Z' stroke='%23AEB4C2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.btn_favorite.active{color: #2965FF;background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.567 2.817a1 1 0 0 1 1.793 0l1.796 3.636a1 1 0 0 0 .752.547l4.016.587a1 1 0 0 1 .553 1.706l-2.905 2.829a1 1 0 0 0-.287.885l.685 3.996a1 1 0 0 1-1.451 1.054l-3.59-1.888a1 1 0 0 0-.93 0l-3.59 1.888a1 1 0 0 1-1.451-1.054l.685-3.996a1 1 0 0 0-.288-.885L2.451 9.293a1 1 0 0 1 .553-1.706L7.02 7a1 1 0 0 0 .752-.547l1.795-3.636Z' fill='%232965FF' stroke='%232965FF' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
+.favorite_links{display:grid;grid-template-columns: repeat(3,1fr);gap: 20px;}
+.favorite_links .item{text-align: center;height:160px;display: flex;align-items: center;justify-content: center;color:#717171;font-size:16px;position: relative;}
+.favorite_links .item a{border:1px solid #B8BFC6;border-radius:7px;flex:1 1;height:100%;display: flex;align-items: center;justify-content: center;flex-direction: column;color:#0044E5;font-size:16px;font-weight:500;}
+.favorite_links .item svg{margin-bottom:1.4rem;}
+.favorite_links .item .btn_remove{position: absolute;right:12px;top:12px;width:24px;height:24px;border-radius: 50%;background-color: #B8BFC6;border:0;text-indent: -999em;overflow: hidden;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1 1 9m0-8 8 8' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");}
+.favorite_links .item .empty{flex:1 1;height:100%;display: flex;align-items: center;justify-content: center;border:1px solid #DADADB;border-radius:7px;}
+
+

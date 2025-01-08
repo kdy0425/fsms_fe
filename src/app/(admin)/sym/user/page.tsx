@@ -470,8 +470,27 @@ const DataList = () => {
     return ''
   }
 
+  //즐겨찾기 토글
+  const [favoriteActive, setFavoriteActive] = useState(false);
+  const handleToggleFavorite = () => {
+    setFavoriteActive((prev) => !prev);
+  };
+
   return (
     <PageContainer title="사용자관리" description="사용자관리">
+
+      <div className="category-wrapper main-category-wrapper">
+          <nav className="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root mui-184aith" aria-label="breadcrumb">
+          </nav>
+          <button
+            type="button"
+            className={`btn_favorite ${favoriteActive ? 'active' : ''}`}
+            onClick={handleToggleFavorite}
+          >
+          즐겨찾기
+        </button>
+      </div>
+
       {/* breadcrumb */}
       <Breadcrumb title="사용자관리" items={BCrumb} />
       {/* end breadcrumb */}

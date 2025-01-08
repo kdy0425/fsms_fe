@@ -73,14 +73,13 @@ const Header = ({ hideLogin = false }: HeaderProps) => {
         {!hideLogin && (
         <Stack spacing={1} direction="row" alignItems="center">
           {/* 로그인/프로필 분기처리 */}
-          {isLoggedIn ? (
             <>
               {/* <UserProfile
                 userNm={authStatus.userNm}
                 authorities={authStatus.authorities}
               /> */}
               <Stack spacing={1} className="global-link-wrapper">
-                <span className="username-zone"><span className="username">{authStatus.userNm}</span>님이 로그인하셨습니다.</span>
+                <span className="username-zone"><span className="username"></span>님이 로그인하셨습니다.</span>
                 <LogoutButton />
                 <Button className="top-btn btn-mypage">마이페이지</Button>
                 {/* 즐겨찾는 메뉴 */}
@@ -93,11 +92,9 @@ const Header = ({ hideLogin = false }: HeaderProps) => {
             </Button>
               </Stack>
             </>
-          ) : (
             <Stack spacing={1} className="global-link-wrapper">
               <Link className="top-btn btn-login" href={'/user/login'}>로그인</Link>
             </Stack>
-          )}
         </Stack>
         )}
       </ToolbarStyled>
