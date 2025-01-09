@@ -40,7 +40,7 @@ const Favorites = () => {
         anchor="top"
         open={showDrawer}
         onClose={() => setShowDrawer(false)}
-        PaperProps={{ sx: { maxWidth: '1000px', width: '1000px', top: '100px', left: '50%', marginLeft: '-500px', height: '600px' } }}
+        PaperProps={{ sx: { maxWidth: '1000px', width: '1000px', top: '100px', left: '50%', marginLeft: '-500px'} }}
       >
         <div className="custom-modal-box-inner">
 
